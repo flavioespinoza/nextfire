@@ -1,8 +1,9 @@
+import { useContext } from 'react';
+import { UserContext } from '../lib/context';
 import { auth, googleAuthProvider } from '../lib/firebase';
 
 export default function Enter() {
-  const user = null;
-  const username = null;
+  const { user, username } = useContext(UserContext)
 
   // 1. user is signed-in, does NOT have username <UsernameForm />
   // 2. user is signed-in, has username <SignOutButton />
