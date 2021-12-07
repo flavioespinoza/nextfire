@@ -1,6 +1,6 @@
 import { auth, googleAuthProvider } from '../lib/firebase';
 
-export default function Enter(props) {
+export default function Enter() {
   const user = null;
   const username = null;
 
