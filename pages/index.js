@@ -2,22 +2,16 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Loader from '../components/Loader';
+import toast from 'react-hot-toast';
 
-function Home() {
+export default function Home({}) {
   return (
-    <div className='container'>
-      <Loader show />
-      <h1>Home</h1>
-      <Link
-        prefetch={false}
-        href={{
-          pathname: '/[username]',
-          query: { username: 'flavio' },
-        }}
-      >
-        <a>Flavio's profile</a>
-      </Link>
-    </div>
+    <main>
+      <Loader show={false} />
+        <h1>Home</h1>
+        <button onClick={() => toast.success('hello toast!')}>
+          Toast Me
+        </button>
+    </main>
   );
 }
-export default Home;
