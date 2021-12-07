@@ -1,7 +1,7 @@
-export default function AdminPostEdit({ }) {
+export default function AdminPostEdit({}) {
   return (
     <main>
-        <h1>AdminPostEdit</h1>
+      <h1>AdminPostEdit</h1>
     </main>
-  )
+  );
 }
