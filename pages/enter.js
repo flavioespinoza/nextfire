@@ -4,9 +4,9 @@ export default function Enter() {
   const user = null;
   const username = null;
 
-  // 1. user signed out <SignInButton />
-  // 2. user signed in, but missing username <UsernameForm />
-  // 3. user signed in, has username <SignOutButton />
+  // 1. user is signed-in, does NOT have username <UsernameForm />
+  // 2. user is signed-in, has username <SignOutButton />
+  // 3. user is signed-out <SignInButton />
   return (
     <main>
       {user ? (
