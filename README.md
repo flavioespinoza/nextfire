@@ -10,7 +10,6 @@ Install dependencies:
 yarn install
 ```
 
-
 Run the development server:
 
 ```bash
